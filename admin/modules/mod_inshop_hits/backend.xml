@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<backend>
+    <module>
+        <id>mod_inshop_hits</id>
+        <title>InstantShop: Хиты</title>
+    </module>
+    <params>
+
+        <param type="flag" name="show_title" title="Показывать названия товаров" default="on" />
+        <param type="flag" name="show_hit_img" title="Показывать отметки хитов" default="on" />        
+        <param type="number" name="limit" title="Количество товаров" units="шт." default="12" />
+        <param type="number" name="cols" title="Число колонок для вывода" units="шт." default="5" />
+        <param type="list_db" name="cat_id" title="Категория" src="cms_shop_cats" src_title="title" src_value="id" tree="1">
+            <option title="-- Все категории --" value="0" />
+        </param>
+
+    </params>
+</backend>
